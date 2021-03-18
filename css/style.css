@@ -5,6 +5,44 @@ Blush: #F5E8DB
 Beige: #FFF7E2
 */
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 10px 0;
+  margin: 0 auto;
+  border-bottom: 2px solid #0B1F53;
+  text align: center;
+  background-color: #FFFFFF;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  color: #0B1F53;
+}
+
+nav > ul > li > a:hover {
+  transition: 0.3s;
+  background-color: #FFF7E2;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -37,8 +75,8 @@ h3 {
   color: #0B1F53
 }
 
-img {
-  width: 100%;
+.img {
+  width: 1200px;
 }
 
 .button {
@@ -46,9 +84,9 @@ img {
   background-color: #F5E8DB;
   color: #0B1F53;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400;
-  padding: 10px;
+  padding: 5px, 10px;
   border-radius: 3px;
   border-style: solid;
   border-color: #0B1F53;
@@ -57,7 +95,25 @@ img {
 }
 
 .button:hover {
-  opacity: 0.5;
-  text-decoration: underline;
+  opacity: 0.4;
   transition: 0.3s;
+}
+
+/*Layout Styling*/
+.container {
+  padding: 0 20px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+
+
+#lifeboat {
+  font-family: : 'Roboto', sans-serif;
 }
