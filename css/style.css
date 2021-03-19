@@ -22,7 +22,6 @@ nav > ul {
   padding: 0;
   display: inline-block;
   width: 100%;
-
 }
 
 nav > ul > li {
@@ -30,7 +29,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 30px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -45,7 +44,7 @@ nav > ul > li > a:hover {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
@@ -53,7 +52,7 @@ body {
 
 h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 52px;
+  font-size: 3.5em;
   font-weight: 400;
   line-height: 1.0;
   color: #0B1F53
@@ -61,7 +60,7 @@ h1 {
 
 h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 48px;
+  font-size: 2.75em;
   font-weight: 400;
   line-height: 1.0;
   color: #0B1F53
@@ -69,10 +68,20 @@ h2 {
 
 h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 36px;
+  font-size: 2.5em;
   font-weight: 400;
   line-height: 1.0;
   color: #0B1F53
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row:: {
+  content: "";
+  clear:both;
+  display:table;
 }
 
 .img {
@@ -81,27 +90,36 @@ h3 {
 
 .button {
   display: inline-block;
-  background-color: #F5E8DB;
+  background-color: #FFF7E2;
   color: #0B1F53;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 28px;
+  font-size: 1.5em;
   font-weight: 400;
-  padding: 5px, 10px;
+  padding: 5px 10px;
   border-radius: 3px;
   border-style: solid;
   border-color: #0B1F53;
   text-decoration: none;
-  transition: 0.3s;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
-  opacity: 0.4;
-  transition: 0.3s;
+  transition: 0.2s;
+  background-color: #F5E8DB;
+  color: #0B1F53;
+  border-style: solid;
+  border-color: #0B1F53;
+}
+
+#aboutme h2 {
+  margin-bottom: 0px;
 }
 
 /*Layout Styling*/
 .container {
   padding: 0 20px;
+  width: auto;
 }
 
 .row {
@@ -113,7 +131,82 @@ h3 {
 }
 
 
+.lifeboat {
+  font-family: 'Roboto', sans-serif;
+}
 
-#lifeboat {
-  font-family: : 'Roboto', sans-serif;
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@@keyframes cloud-move {
+  from {transform: translate(o,50px);}
+  to {transform: translate(200px, 50px);}
+
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+/*Medium devices*/
+@media only screen and (min-width: 640px){
+header {text-align: unset;}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px:}
+}
+
+.col-md-6 {
+  width: 50%;
+  float: left;
+}
+
+/*Large devices*/
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+}
+
+.col-lg-5 {
+  width: 40%;
+  float: right;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*X-large devices*/
+@media only screen and (min-width: 1440px) {
+
 }
