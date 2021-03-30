@@ -11,25 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0217911639.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
-    <div id="header">
       <div class="container">
-        <picture>
-          <source srcset="img/homepage/logo.png" media="(max-width:250px)">
-          <img src="img/homepage/logo.png" alt="Logo" class="logo">
-        </picture>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <picture>
+            <source srcset="img/homepage/logo.png" media="(max-width:250px)">
+            <img src="img/homepage/logo.png" alt="Logo" class="logo">
+          </picture>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>  
       </div>
-    </div>
     </header>
 
 <main class="container">
@@ -39,7 +41,7 @@
     <p>I am a UX Designer based in Portland, ME.</p>
   </div>
 
-  <div class="bigrow">
+  <div>
   </div>
 <!--End of Hero-->
 <!--My Work-->
@@ -47,7 +49,7 @@
     <h2>My Work</h2>
         <div class="row">
           <div class="column col-md-6 col-lg-7">
-            <div class="imgwrapper">
+            <div>
             <picture>
               <source srcset="img/homepage/lifeboat_mockup_original.jpg" media="(max-width:767px)">
               <img src="img/homepage/lifeboat_mockup_mobile.jpg" alt="Lifeboat Mockup">
@@ -55,7 +57,7 @@
             </div>
           </div>
           <div class="column col-md-6 col-lg-5">
-            <div class="descwrapper">
+            <div class="leftp30">
             <h3>Lifeboat</h3>
             <p>A marine weather app designed for boaters to check weather
             conditions.</p>
@@ -64,9 +66,9 @@
           </div>
         </div>
 
-          <div class="row">
+          <div class="row clearfix">
             <div class="column col-md-6 col-lg-7">
-              <div class="imgwrapper">
+              <div>
               <picture>
               <source srcset="img/homepage/rotten_mockup_original.jpg" media="(max-width:767px)">
               <img src="img/homepage/rotten_mockup_mobile.jpg" alt="Rotten">
@@ -74,11 +76,11 @@
               </div>
             </div>
             <div class="column col-md-6 col-lg-5">
-              <div class="descwrapper">
+              <div class="leftp30">
               <h3>Rotten.</h3>
               <p>A food management app that helps people keep track of what
               groceries they have to avoid food waste.</p>
-              <a class="button" target="_self">Learn More</a>
+              <a href="rotten.html" class="button" target="_self">Learn More</a>
             </div>
             </div>
           </div>
@@ -102,6 +104,7 @@
   </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 
 </body>
