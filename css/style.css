@@ -203,7 +203,6 @@ footer {
   width: 400px;
   height: 250px;
   border-radius: 6px;
-
 }
 
 .lowfi {
@@ -223,7 +222,7 @@ Peach: #F4AE86
 Green: #2E9E46
 Gray black: #494949
 Pink: #D16666
-iPhone screen: 499E5C
+iPhone screen: C2E0C7
 */
 
 .rotten {
@@ -234,7 +233,6 @@ iPhone screen: 499E5C
 
 .rotten h1 {
   font-family: 'Montserrat', serif;
-  background-image: url(../img/work/rotten/background.png);
   color: #494949;
   background-color: #FFFFFF;
   height: 300px;
@@ -246,6 +244,7 @@ iPhone screen: 499E5C
   margin: 50px 0;
   background-image: url(../img/work/rotten/h2.png);
   color:#494949;
+  background-color: #FFFFFF;
   height: 200px;
   width: auto;
   padding-top: 75px;
@@ -273,7 +272,28 @@ iPhone screen: 499E5C
   width: 400px;
   height: 200px;
   border-radius: 10px;
+}
 
+.rotcontent {
+  text-align: left;
+  background-color: #F3F3F3;
+  color:#2E9E46;
+  margin: 20px;
+  padding: 10px 20px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.studycontent {
+  text-align: left;
+  background-color: #F3F3F3;
+  color:#D16666;
+  margin: 20px;
+  padding: 20px 20px;
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
 }
 
 /*ABOUTME*/
@@ -303,8 +323,8 @@ iPhone screen: 499E5C
   display:table;
 }
 
-.leftp30 {
-  padding-left: 30px;
+.leftp50 {
+  padding-left: 50px;
   padding-top: 0px;
 }
 
@@ -316,8 +336,8 @@ iPhone screen: 499E5C
   padding-left: 200px;
 }
 
-.rightp30 {
-  padding-right: 30px;
+.rightp50 {
+  padding-right: 50px;
   padding-top: 0px;
 }
 
@@ -325,19 +345,20 @@ iPhone screen: 499E5C
   padding-right: 100px;
 }
 
+
 .rightp200 {
   padding-right: 200px;
+}
+
+.topp200{
+  padding-top: 200px;
 }
 
 .topp150 {
   padding-top: 150px;
 }
 
-.space200{
-  padding: 200px 0 0 0;
-}
-
-.space100{
+.topp100{
   padding-top: 100px;
 }
 
@@ -355,6 +376,10 @@ iPhone screen: 499E5C
 
 .col-md-5 {
   width: 40%;
+}
+
+.col-sm-12 {
+  width: 100%;
 }
 
 .clearfix {
@@ -401,8 +426,8 @@ nav > ul > li {
   display: none;
 }
 
-.col-md-6 {
-  width: 50%;
+.col-sm-12 {
+  width: 100%;
 }
 
 .logo {
