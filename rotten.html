@@ -1,342 +1,379 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jenni Hewes - UX Designer</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0217911639.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <header>
-    <div id="header">
-      <div class="container">
-        <picture>
-          <source srcset="img/homepage/logo.png" media="(max-width:300px)">
-          <img src="img/homepage/logo.png" alt="Logo" class="logo">
-        </picture>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jenni Hewes - UX Designer</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0217911639.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href=index.html>
+          <picture>
+            <source srcset="img/homepage/logo.png" media="(max-width:250px)">
+            <img src="img/homepage/logo.png" alt="Logo" class="logo">
+          </picture>
+        </a>
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Portfolio</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
     </div>
-    </header>
+  </header>
 
-<main class="container">
-  <div class="rotten">
-    <div>
-        <h1 style="padding-top: 100px; padding-left: 50px;">Rotten.</h1> 
+  <main class="container">
+    <div class="rotten">
+      <div>
+        <h1 style="padding-top: 100px; padding-left: 50px;">Rotten.</h1>
         <div>
-            <picture class="col-md-6">
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
             <source srcset="img/work/rotten/myfood_mockup.png" media="(max-width:300px)">
             <img src="img/work/rotten/myfood_mockup.png" alt="Home Mockup" style="width: 500px;">
-            </picture>
-        </div> 
-        <div>
-            <h3 class="col-md-6" style="padding-top: 250px;">A food management app that helps people keep track of what groceries they have to avoid food waste.</h3>
+          </picture>
         </div>
-    </div>
-  
+        <div>
+          <h3 class="column col-md-5 col-md-6 col-lg-7 col-sm-12" style="padding-top: 250px;">A food management app that helps people keep track of what
+            groceries they have to avoid food waste.</h3>
+        </div>
+      </div>
 
-    <div class="clearfix">
-      <div class="col-md-6" style ="padding-top: 200px; padding-left: 150px;">
-        <h4>My Role</h4>
+
+      <div class="clearfix">
+        <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12" style="padding-top: 200px; padding-left: 150px;">
+          <h4>My Role</h4>
           <ul>
             <li>UX/UI Designer</li>
           </ul>
-        <h4>Tools Used</h4>
+          <h4>Tools Used</h4>
           <ul>
             <li>Figma (Wireframes, Prototyping)</li>
             <li>UsabilityHub (Preference Tests)</li>
             <li>Google Forms (User Surveys)</li>
           </ul>
-          <a href="https://xd.adobe.com/view/15eb13fe-2695-408c-971f-f01afd86165b-40b8/" class="button" target="_blank">Link to Prototype</a>
-      </div>
+          <a href="https://xd.adobe.com/view/15eb13fe-2695-408c-971f-f01afd86165b-40b8/" class="button"
+            target="_blank">Link to Prototype</a>
+        </div>
         <div>
-          <picture class="col-md-6" style ="padding-top: 100px; padding-left: 100px;">
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12" style="padding-top: 100px; padding-left: 100px;">
             <source srcset="img/work/rotten/home_mockup.png" media="(max-width:300px)">
             <img src="img/work/rotten/home_mockup.png" alt="Home Mockup" style="width: 350px;">
           </picture>
         </div>
-    </div>
+      </div>
 
-<!--Problem start-->   
-  <div class="clearfix">
-    <div class="topp200">
-    <h2>The Problem</h2>
-    </div>
-      <p class="textmargin">Everyday food is thrown out because it has expired. People buy items
+      <!--Problem start-->
+      <div class="clearfix">
+        <div class="topp200">
+          <h2>The Problem</h2>
+        </div>
+        <p class="textmargin">Everyday food is thrown out because it has expired. People buy items
           they already have without realizing it. In homes and apartments with
           many people, it is especially difficult to manage food. People need a
           way to keep track of food that they have so it is not wasted.</p>
         <div class="row">
-            <div class="flex">
-              <div class="stories">
+          <div class="flex">
+            <div class="stories">
               <p>“When I’m at the grocery store, I can’t remember what I have at home.”</p>
-              </div>
-              <div class="stories">
-              <p>“I share certain foods with my room mate. We always buy the same items and end up with two of everything.”</p>
-              </div>
-              <div class="stories">
-              <p>“I end up throwing out meat and vegetables because I lose track of expiration dates.”</p>
-              </div>
             </div>
-        </div>       
-  </div>
-<!--Problem end-->  
-
-<!--User start-->  
-<div class="topp200 clearfix">
-  <h2>The User</h2>
-    <div>
-      <div class="col-md-6">
-        <picture class="leisure">
-          <source srcset="img/work/rotten/urban.jpg" media="(max-width:767px)">
-          <img src="img/work/rotten/urban.jpg" alt="Urban Roomate">
-        </picture>
+            <div class="stories">
+              <p>“I share certain foods with my room mate. We always buy the same items and end up with two of
+                everything.”</p>
+            </div>
+            <div class="stories">
+              <p>“I end up throwing out meat and vegetables because I lose track of expiration dates.”</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 leftp50">
-        <h3 style="margin-top: 0px;">The Urban Roomate</h3>
-          <p>Ages 20-30</p>
-          <p>“We have three bottles of ketchup in our apartment. I need a way to communicate with my room mates about what food we have.”</p>
-          <h4>Behaviors</h4>
+      <!--Problem end-->
+
+      <!--User start-->
+      <div class="topp200 clearfix">
+        <h2>The User</h2>
+        <div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <picture class="leisure">
+              <source srcset="img/work/rotten/urban.jpg" media="(max-width:767px)">
+              <img src="img/work/rotten/urban.jpg" alt="Urban Roomate">
+            </picture>
+          </div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 leftp50">
+            <h3 style="margin-top: 0px;">The Urban Roomate</h3>
+            <p>Ages 20-30</p>
+            <p>“We have three bottles of ketchup in our apartment. I need a way to communicate with my room mates about
+              what food we have.”</p>
+            <h4>Behaviors</h4>
             <ul>
               <li>Goes to the grocery store once a week</li>
               <li>Cooks 3-4 dinners a week for 1 person. Goes out to eat frequently</li>
               <li>Does not make a grocery list before going to the grocery store</li>
               <li>Does not enjoy cooking and is always looking for new simple recipes</li>
             </ul>
-          <h4>Frustrations</h4>
+            <h4>Frustrations</h4>
             <ul>
               <li>Buying shared groceries like spices and condiments that are already in the apartment</li>
-              <li>Having to think of what  to cook after a long day</li>
-            </ul>  
-      </div>   
-    </div>
+              <li>Having to think of what to cook after a long day</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="topp150">
-      <div class="col-md-6 topp150">
-        <picture>
-          <source srcset="img/work/rotten/suburban.jpg" media="(max-width:767px)">
-          <img src="img/work/rotten/suburban.jpg" alt="Suburban Organizer">
-        </picture>
-      </div> 
-      <div class="col-md-6 topp150 leftp50">
-        <h3 style="margin-top: 0px;">The Suburban Organizer</h3>
-          <p>Ages 30-40</p>
-          <p>“I have to cook large dinners for my hungry family. It takes a lot of planning to make sure meals get cooked and food doesn’t go to waste.”</p>
-          <h4>Behaviors</h4>
+        <div class="topp150">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150">
+            <picture>
+              <source srcset="img/work/rotten/suburban.jpg" media="(max-width:767px)">
+              <img src="img/work/rotten/suburban.jpg" alt="Suburban Organizer">
+            </picture>
+          </div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150 leftp50">
+            <h3 style="margin-top: 0px;">The Suburban Organizer</h3>
+            <p>Ages 30-40</p>
+            <p>“I have to cook large dinners for my hungry family. It takes a lot of planning to make sure meals get
+              cooked and food doesn’t go to waste.”</p>
+            <h4>Behaviors</h4>
             <ul>
               <li>Goes to the grocery store twice a week</li>
               <li>Cooks 5-6 dinners a week for 5 people. Does not go out to eat to save money</li>
               <li>Makes a grocery list before going to the grocery store</li>
               <li>s a deal shopper - will stock up on an item if it is on sale</li>
             </ul>
-          <h4>Frustrations</h4>
+            <h4>Frustrations</h4>
             <ul>
               <li>When plans change and food doesn’t get cooked and expires</li>
               <li>Has used food management apps in the past, but finds it tedious to keep lists updated</li>
             </ul>
-      </div>
-    </div> 
-</div>  
-<!--User end-->  
-      
-<!--Brainstorm start-->
-<div class="clearfix topp200">
-  <h2>Brainstorm</h2>
-    <div>
-      <div class="lowfi float">
-        <picture style="padding-right: 200px;">
-          <source srcset="img/work/rotten/drawing1.jpg" media="(max-width:767px)">
-          <img src="img/work/rotten/drawing1.jpg" alt="Weather Lowfi" >
-        </picture>
-      </div>  
-      <div class="brainstorm">
-        <div class="rotcontent">
-          <h4>Issue</h4>
-          <p>People need a way to keep track of expiration dates and what food they have to avoid wasting food.</p>
-        </div> 
-        <div class="rotcontent">
-          <h4>Brainstorm</h4>
-          <p>Design a food list that is organized by category and stores expiration dates.</p>
-        </div> 
-      </div>
-    </div>    
-
-    <div class="clearfix topp200">       
-      <div class="lowfi float">
-        <picture style="padding-right: 200px;">
-          <source srcset="img/work/rotten/drawing2.jpg" media="(max-width:767px)">
-          <img src="img/work/rotten/drawing2.jpg" alt="Home Lowfi">
-        </picture>
-      </div> 
-      <div class="brainstorm">
-        <div class="rotcontent">
-          <h4>Issue</h4>
-          <p>Roomates need a way to manage the food they share.</p>
-        </div>
-        <div class="rotcontent">
-        <h4>Brainstorm</h4>
-          <p>Create a feature for room mates to share lists.</p>
+          </div>
         </div>
       </div>
-    </div>
+      <!--User end-->
 
-
-    <div class="clearfix topp200"> 
-      <div class="lowfi float">
-        <picture style="padding-right: 200px;">
-          <source srcset="img/work/rotten/drawing3.jpg" media="(max-width:767px)">
-          <img src="img/work/rotten/drawing3.jpg" alt="Trips Lowfi">
-        </picture>
-      </div>
-      <div class="brainstorm">
-        <div class="rotcontent">
-          <h4>Issue</h4>
-          <p>Updating grocery apps can be manual and time consuming.</p>
+      <!--Brainstorm start-->
+      <div class="clearfix topp200">
+        <h2>Brainstorm</h2>
+        <div>
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/rotten/drawing1.jpg" media="(max-width:767px)">
+              <img src="img/work/rotten/drawing1.jpg" alt="Weather Lowfi">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="rotcontent">
+              <h4>Issue</h4>
+              <p>People need a way to keep track of expiration dates and what food they have to avoid wasting food.</p>
+            </div>
+            <div class="rotcontent">
+              <h4>Brainstorm</h4>
+              <p>Design a food list that is organized by category and stores expiration dates.</p>
+            </div>
+          </div>
         </div>
-        <div class="rotcontent">
-          <h4>Brainstorm</h4>
-          <p>Have a scan receipt feature to automatically update what items are at home.</p>
+
+        <div class="clearfix topp200">
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/rotten/drawing2.jpg" media="(max-width:767px)">
+              <img src="img/work/rotten/drawing2.jpg" alt="Home Lowfi">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="rotcontent">
+              <h4>Issue</h4>
+              <p>Roomates need a way to manage the food they share.</p>
+            </div>
+            <div class="rotcontent">
+              <h4>Brainstorm</h4>
+              <p>Create a feature for room mates to share lists.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="clearfix topp200">
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/rotten/drawing3.jpg" media="(max-width:767px)">
+              <img src="img/work/rotten/drawing3.jpg" alt="Trips Lowfi">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="rotcontent">
+              <h4>Issue</h4>
+              <p>Updating grocery apps can be manual and time consuming.</p>
+            </div>
+            <div class="rotcontent">
+              <h4>Brainstorm</h4>
+              <p>Have a scan receipt feature to automatically update what items are at home.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div> 
-</div>
-<!--Brainstorm end-->
+      <!--Brainstorm end-->
 
-<!--Usability study start-->
-<div class="topp200">
-  <h2>Usability Study</h2>
-    <div>
-      <p>6 users participated in a study to identity pain points in the prototype. They were asked to complete these 6 tasks.</p>
-    </div>  
-    <div>
-      <picture>
-        <source srcset="img/work/rotten/usability.png" media="(max-width:767px)">
-        <img src="img/work/rotten/usability.png" alt="Usability Issues" style="width: 900px;">
-      </picture> 
-    </div>
-
-  <h4 class="topp100">Usability Study Results</h4>   
-    <div>
-      <div class="lowfi float">
-        <picture style="padding-right: 200px;">
-        <source srcset="img/work/rotten/issue1.png" media="(max-width:767px)">
-        <img src="img/work/rotten/issue1.png" alt="Study Issue 1" style="border-style:solid;">
-        </picture>
-      </div>
-      <div class="brainstorm">
-        <div class="studycontent">
-          <p>The biggest issue was with task 4 that asked users to create a space to keep track of their spices. 100% of
-            participants could not complete this task.</p>
-          <p> In my orignial design, I had the idea for there to be different types of food storage. For example, users could
-            organize where to store food such as spice rack, pantry, or freezer.</p>
+      <!--Usability study start-->
+      <div class="topp200">
+        <h2>Usability Study</h2>
+        <div>
+          <p>6 users participated in a study to identity pain points in the prototype. They were asked to complete these
+            6 tasks.</p>
         </div>
-      </div>  
-    </div>
-
-    <div class="clearfix topp150">
-      <div class="lowfi float">
-        <picture style="padding-right: 200px;">
-          <source srcset="img/work/rotten/issue2.png" media="(max-width:767px)">
-          <img src="img/work/rotten/issue2.png" alt="Study Issue 2" style="border-style:solid;">
-        </picture>
-      </div>
-      <div class="brainstorm">
-        <div class="studycontent">
-          <p>During the usability study I learned that the different types of storage confused users. When asked to create a
-            list for spices, participants went to the list of all food and tried to create a list from there.</p>
-          <p>This lead me to remove the different food storage types. It was clear that it was not intutive and caused confusion
-            for the user.</p>
+        <div>
+          <picture>
+            <source srcset="img/work/rotten/usability.png" media="(max-width:767px)">
+            <img src="img/work/rotten/usability.png" alt="Usability Issues" style="width: 900px;">
+          </picture>
         </div>
-      </div>  
-    </div>
-</div>  
- <!--Usability study end-->        
 
- <!--Final design start-->
- <div>
-  <div class="topp200 clearfix">
-    <h2>The Final Design</h2>
-    <div class="leftp100 topp50">
-      <picture>
-        <source srcset="img/work/rotten/styleguide.png" media="(max-width:767px)">
-        <img src="img/work/rotten/styleguide.png" alt="Style Guide" style="width:80%;">
-      </picture>
-    </div>
-  </div>  
+        <h4 class="topp100">Usability Study Results</h4>
+        <div>
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/rotten/issue1.png" media="(max-width:767px)">
+              <img src="img/work/rotten/issue1.png" alt="Study Issue 1" style="border-style:solid;">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="studycontent">
+              <p>The biggest issue was with task 4 that asked users to create a space to keep track of their spices.
+                100% of
+                participants could not complete this task.</p>
+              <p> In my orignial design, I had the idea for there to be different types of food storage. For example,
+                users could
+                organize where to store food such as spice rack, pantry, or freezer.</p>
+            </div>
+          </div>
+        </div>
 
-  
-    <div class="topp200 clearfix">
-      <picture class="col-md-6 leftp200">
-        <source srcset="img/work/rotten/home_mockup.png" media="(max-width:767px)">
-        <img src="img/work/rotten/home_mockup.png" alt="Home" style="width: 350px;">
-      </picture>
-      <div class="col-md-6 topp150 rightp100">
-        <h3>Home Page</h3>
-        <p>The home page highlights expiration dates to help users avoid food waste. Users can also mark items as running low
-          and add them to their shopping lists.</p>
+        <div class="clearfix topp150">
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/rotten/issue2.png" media="(max-width:767px)">
+              <img src="img/work/rotten/issue2.png" alt="Study Issue 2" style="border-style:solid;">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="studycontent">
+              <p>During the usability study I learned that the different types of storage confused users. When asked to
+                create a
+                list for spices, participants went to the list of all food and tried to create a list from there.</p>
+              <p>This lead me to remove the different food storage types. It was clear that it was not intutive and
+                caused confusion
+                for the user.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>   
+      <!--Usability study end-->
 
-    <div class="clearfix topp200">
-      <div class="col-md-6 topp150 leftp100">
-        <h3>My Food</h3>  
-        <p>My Food is where users keep track of all the food they have at home. My Food is organized by food category and users
-          can mark when food is running low. Users can scan their receipt to automatically update My Food.</p>
-      </div> 
-      <picture class="col-md-6">
-        <source srcset="img/work/rotten/additem_mockup.png" media="(max-width:767px)">
-        <img src="img/work/rotten/additem_mockup.png" alt="Weather" style="width: 350px;">
-      </picture>
-    </div>
+      <!--Final design start-->
+      <div>
+        <div class="topp200 clearfix">
+          <h2>The Final Design</h2>
+          <div class="leftp100 topp50">
+            <picture>
+              <source srcset="img/work/rotten/styleguide.png" media="(max-width:767px)">
+              <img src="img/work/rotten/styleguide.png" alt="Style Guide" style="width:80%;">
+            </picture>
+          </div>
+        </div>
 
-    <div class="clearfix topp200">
-      <picture class="col-md-6 leftp200">
-        <source srcset="img/work/rotten/recipes_mockup.png" media="(max-width:767px)">
-        <img src="img/work/rotten/recipes_mockup.png" alt="Recipes" style="width: 350px;">
-      </picture>
-      <div class="col-md-6 topp150 rightp100">
-        <h3>Recipes</h3>
-        <p>Users can select specific ingredients and search for recipes that include those ingredients. They will also be shown
-          recipes that are missing a few ingredients.</p>
+
+        <div class="topp200 clearfix">
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12 leftp200">
+            <source srcset="img/work/rotten/home_mockup.png" media="(max-width:767px)">
+            <img src="img/work/rotten/home_mockup.png" alt="Home" style="width: 350px;">
+          </picture>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150 rightp100">
+            <h3>Home Page</h3>
+            <p>The home page highlights expiration dates to help users avoid food waste. Users can also mark items as
+              running low
+              and add them to their shopping lists.</p>
+          </div>
+        </div>
+
+        <div class="clearfix topp200">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150 leftp100">
+            <h3>My Food</h3>
+            <p>My Food is where users keep track of all the food they have at home. My Food is organized by food
+              category and users
+              can mark when food is running low. Users can scan their receipt to automatically update My Food.</p>
+          </div>
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <source srcset="img/work/rotten/additem_mockup.png" media="(max-width:767px)">
+            <img src="img/work/rotten/additem_mockup.png" alt="Weather" style="width: 350px;">
+          </picture>
+        </div>
+
+        <div class="clearfix topp200">
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12 leftp200">
+            <source srcset="img/work/rotten/recipes_mockup.png" media="(max-width:767px)">
+            <img src="img/work/rotten/recipes_mockup.png" alt="Recipes" style="width: 350px;">
+          </picture>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150 rightp100">
+            <h3>Recipes</h3>
+            <p>Users can select specific ingredients and search for recipes that include those ingredients. They will
+              also be shown
+              recipes that are missing a few ingredients.</p>
+          </div>
+        </div>
+
+        <div class="clearfix topp200">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150 leftp100">
+            <h3>Friends</h3>
+            <p>Users can share food lists with room mates and friends. This will help people living together to avoid
+              buying
+              duplicate shared items.</p>
+          </div>
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <source srcset="img/work/rotten/friends_mockup.png" media="(max-width:767px)">
+            <img src="img/work/rotten/friends_mockup.png" alt="Friends" style="width: 350px;">
+          </picture>
+        </div>
       </div>
-    </div>
+      <!--Final product end-->
 
-    <div class="clearfix topp200">
-      <div class="col-md-6 topp150 leftp100">
-        <h3>Friends</h3>
-        <p>Users can share food lists with room mates and friends. This will help people living together to avoid buying
-          duplicate shared items.</p>
-      </div>
-      <picture class="col-md-6">
-        <source srcset="img/work/rotten/friends_mockup.png" media="(max-width:767px)">
-        <img src="img/work/rotten/friends_mockup.png" alt="Friends" style="width: 350px;">
-      </picture>
     </div>
-</div> 
-<!--Final product end--> 
-
-  </div> 
-</main>
+  </main>
 
   <footer class="footer clearfix">
     <div class="container">
       <div class="logo" style="margin-top: 20px;">
         <a href="https://www.linkedin.com/in/jenni-hewes/" target="_blank">
-          <svg height="40px" width="40px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g>
+          <svg height="40px" width="40px"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1"
+            viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="g5891">
+              <path
+                d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
+                id="background" style="fill:#2867b2;" />
+              <g id="shapes">
+                <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
+                <path
+                  d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
+                  id="path13-0" style="fill:#fff;fill-rule:nonzero;" />
+                <path
+                  d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                  id="path15" style="fill:#fff;fill-rule:nonzero;" />
+              </g>
+            </g>
           </svg>
         </a>
       </div>
@@ -344,5 +381,10 @@
     </div>
   </footer>
 
-  </body>
-  </html>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

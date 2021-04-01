@@ -1,113 +1,120 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jenni Hewes - UX Designer</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0217911639.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <header>
-    <div id="header">
-      <div class="container">
-        <picture>
-          <source srcset="img/homepage/logo.png" media="(max-width:300px)">
-          <img src="img/homepage/logo.png" alt="Logo" class="logo">
-        </picture>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jenni Hewes - UX Designer</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0217911639.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href=index.html>
+          <picture>
+            <source srcset="img/homepage/logo.png" media="(max-width:250px)">
+            <img src="img/homepage/logo.png" alt="Logo" class="logo">
+          </picture>
+        </a>
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Portfolio</a></li>
             <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
     </div>
-    </header>
+  </header>
 
-<main class="container">
-  <div class="lifeboat">
-    <div>
-      <h1 style="padding-top: 100px; padding-left: 75px;">Lifeboat</h1>
-      <div class="topp100">
-        <picture class="col-md-6">
-          <source srcset="img/work/lifeboat/home_mockup.png" media="(max-width:300px)">
-          <img src="img/work/lifeboat/home_mockup.png" alt="Home Mockup" style="width: 600px;">
-        </picture>
-      </div> 
+  <main class="container">
+    <div class="lifeboat">
       <div>
-        <h3 class="col-md-6" style="padding-top: 200px;">A marine weather app designed for boaters to check weather
-      conditions.</h3>
-      </div>
-    </div>
-  
-
-  <div class="clearfix topp150">
-    <div class="col-md-6" style ="padding-top: 50px; padding-left: 150px;">
-      <h4>My Role</h4>
-        <ul>
-          <li>UX/UI Designer</li>
-        </ul>
-      <h4>Tools Used</h4>
-        <ul>
-          <li>Adobe XD (Wireframes, Prototyping)</li>
-          <li>Balsamiq (Wireframes)</li>
-          <li>Optimal Workshop (Card Sorting)</li>
-          <li>UsabilityHub (Preference Tests)</li>
-          <li>Google Forms (User Surveys)</li>
-        </ul>
-        <a href="https://xd.adobe.com/view/15eb13fe-2695-408c-971f-f01afd86165b-40b8/" class="button" target="_blank">Link to Prototype</a>
-    </div>
-      <div>
-        <picture class="col-md-6">
-          <source srcset="img/work/lifeboat/hourly_mockup.png" media="(max-width:300px)">
-          <img src="img/work/lifeboat/hourly_mockup.png" alt="Home Mockup" style="width: 600px;">
-        </picture>
-      </div>
-  </div>
-
-<!--Problem start-->   
-  <div class="clearfix topp200">
-    <h2>The Problem</h2>
-      <div class="textmargin">
-        <p>Boating enthusiasts need specific weather metrics that aren't found on every
-        weather app. To determine what ocean conditions are like, they need to know swell
-        height, tide times, wind direction, wind speed, and visibility.
-        Current weather apps have one but not all the weather metrics boaters want.
-        Boaters end up checking 2-4 sources to get all the information they need.</p>
-        <h4>Problem Statement</h4>
-          <p>Boaters need a simple way to determine if weather conditions are safe on the ocean.
-          We will know this to be true when users are checking the app when planning a boat
-          excursion.</p>
-      </div>
-  </div>
-<!--Problem end-->   
-
-<!--User start-->   
-  <div class="topp200">
-    <h2>The User</h2>
-      <div>
-        <div class="col-md-6">
-          <picture class="leisure">
-            <source srcset="img/work/lifeboat/leisurely_desktop.jpg" media="(max-width:767px)">
-            <img src="img/work/lifeboat/leisurely_mobile.jpg" alt="Lesiurely Retiree">
+        <h1 style="padding-top: 100px; padding-left: 75px;">Lifeboat</h1>
+        <div class="topp100">
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <source srcset="img/work/lifeboat/home_mockup.png" media="(max-width:300px)">
+            <img src="img/work/lifeboat/home_mockup.png" alt="Home Mockup" style="width: 600px;">
           </picture>
         </div>
-        <div class="col-md-6">
-          <div class="leftp50">
-          <h3 style="margin-top: 0px;">The Leisurely Retiree</h3>
-            <p>Ages 60+</p>
-            <p>“I am used to planning boat trips using old fashioned methods. I am open to try new
-            apps if they aren’t too confusing for me.”</p>
-            <h4>Behaviors</h4>
+        <div>
+          <h3 class="column col-md-5 col-md-6 col-lg-7 col-sm-12" style="padding-top: 200px;">A marine weather app designed for boaters to check weather
+            conditions.</h3>
+        </div>
+      </div>
+
+
+      <div class="clearfix topp150">
+        <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12" style="padding-top: 50px; padding-left: 150px;">
+          <h4>My Role</h4>
+          <ul>
+            <li>UX/UI Designer</li>
+          </ul>
+          <h4>Tools Used</h4>
+          <ul>
+            <li>Adobe XD (Wireframes, Prototyping)</li>
+            <li>Balsamiq (Wireframes)</li>
+            <li>Optimal Workshop (Card Sorting)</li>
+            <li>UsabilityHub (Preference Tests)</li>
+            <li>Google Forms (User Surveys)</li>
+          </ul>
+          <a href="https://xd.adobe.com/view/15eb13fe-2695-408c-971f-f01afd86165b-40b8/" class="button"
+            target="_blank">Link to Prototype</a>
+        </div>
+        <div>
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <source srcset="img/work/lifeboat/hourly_mockup.png" media="(max-width:300px)">
+            <img src="img/work/lifeboat/hourly_mockup.png" alt="Home Mockup" style="width: 600px;">
+          </picture>
+        </div>
+      </div>
+
+      <!--Problem start-->
+      <div class="clearfix topp200">
+        <h2>The Problem</h2>
+        <div class="textmargin">
+          <p>Boating enthusiasts need specific weather metrics that aren't found on every
+            weather app. To determine what ocean conditions are like, they need to know swell
+            height, tide times, wind direction, wind speed, and visibility.
+            Current weather apps have one but not all the weather metrics boaters want.
+            Boaters end up checking 2-4 sources to get all the information they need.</p>
+          <h4>Problem Statement</h4>
+          <p>Boaters need a simple way to determine if weather conditions are safe on the ocean.
+            We will know this to be true when users are checking the app when planning a boat
+            excursion.</p>
+        </div>
+      </div>
+      <!--Problem end-->
+
+      <!--User start-->
+      <div class="topp200">
+        <h2>The User</h2>
+        <div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <picture class="leisure">
+              <source srcset="img/work/lifeboat/leisurely_desktop.jpg" media="(max-width:767px)">
+              <img src="img/work/lifeboat/leisurely_mobile.jpg" alt="Lesiurely Retiree">
+            </picture>
+          </div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <div class="leftp50">
+              <h3 style="margin-top: 0px;">The Leisurely Retiree</h3>
+              <p>Ages 60+</p>
+              <p>“I am used to planning boat trips using old fashioned methods. I am open to try new
+                apps if they aren’t too confusing for me.”</p>
+              <h4>Behaviors</h4>
               <ul>
                 <li>Has more time to take long trips. Enjoys being spontaneous</li>
                 <li>Checks the weather section while reading the newspaper and on his phone</li>
@@ -115,249 +122,267 @@
                 <li>Checks the weather at his starting point and destination</li>
                 <li>Checks the weather 3 days in advance</li>
               </ul>
-            <h4>Frustrations</h4>
+              <h4>Frustrations</h4>
               <ul>
                 <li>Finds crowded interfaces to be confusing</li>
                 <li>Wants a recommendation so he doesn't have to comb through weather data</li>
-              </ul>  
-          </div>  
-        </div>  
-      </div>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-      <div>
-        <div class="col-md-6 topp150">
-          <picture>
-            <source srcset="img/work/lifeboat/busy_desktop.jpg" media="(max-width:767px)">
-            <img src="img/work/lifeboat/busy_mobile.jpg" alt="Busy Boater">
-          </picture>
-        </div> 
-        <div class="col-md-6 topp150 leftp50">
-          <h3 style="margin-top: 0px;">The Busy Boater</h3>
+        <div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150">
+            <picture>
+              <source srcset="img/work/lifeboat/busy_desktop.jpg" media="(max-width:767px)">
+              <img src="img/work/lifeboat/busy_mobile.jpg" alt="Busy Boater">
+            </picture>
+          </div>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp150 leftp50">
+            <h3 style="margin-top: 0px;">The Busy Boater</h3>
             <p>Ages 25-34</p>
             <p>“I like to plan ahead and pick the best day for boating. I check 3 apps to understand
-            what the weather conditions will be.”</p>
+              what the weather conditions will be.”</p>
             <h4>Behaviors</h4>
-              <ul>
-                <li>Likes to plan ahead. Has less free time so wants his days on the ocean to be worth it</li>
-                <li>Checks 3 different sources to find all the weather data he needs</li>
-                <li>Checks the weather everyday in 1-2 minute sessions</li>
-                <li>Checks the weather 7 days in advance</li>
-              </ul>
+            <ul>
+              <li>Likes to plan ahead. Has less free time so wants his days on the ocean to be worth it</li>
+              <li>Checks 3 different sources to find all the weather data he needs</li>
+              <li>Checks the weather everyday in 1-2 minute sessions</li>
+              <li>Checks the weather 7 days in advance</li>
+            </ul>
             <h4>Frustrations</h4>
-              <ul>
-                <li>Having to check multiple weather sources to get all the information he wants</li>
-                <li>Each source has a different format. One has visualizations, one has metrics, and
+            <ul>
+              <li>Having to check multiple weather sources to get all the information he wants</li>
+              <li>Each source has a different format. One has visualizations, one has metrics, and
                 one has a written description</li>
-              </ul>
-        </div>
-
-      </div> 
-  </div> 
-<!--User end-->      
-      
-<!--Brainstorm start-->
-  <div class="clearfix topp150">
-    <h2>Brainstorm</h2>
-      <div>
-        <div class="lowfi float">
-          <picture style="padding-right: 200px;">
-            <source srcset="img/work/lifeboat/weather_lowfi.png" media="(max-width:767px)">
-            <img src="img/work/lifeboat/weather_lowfi.png" alt="Weather Lowfi" >
-          </picture>
-        </div>  
-        <div class="brainstorm">
-          <div class="content">
-            <h4>Issue</h4>
-            <p>Boaters are frustrated with having to check multiple weather sources to get all the
-            information they need.</p>
-          </div> 
-          <div class="content">
-            <h4>Brainstorm</h4>
-            <p>Ensure all pertinent information to boaters is included: temperature, precipitation, wind, swell
-            height, visibility, tide times, and sun times.</p>
-          </div> 
-        </div>
-      </div>    
-
-      <div class="clearfix topp200">       
-        <div class="lowfi float">
-          <picture style="padding-right: 200px;">
-            <source srcset="img/work/lifeboat/home_lowfi.png" media="(max-width:767px)">
-            <img src="img/work/lifeboat/home_lowfi.png" alt="Home Lowfi">
-          </picture>
-        </div> 
-        <div class="brainstorm">
-          <div class="content">
-            <h4>Issue</h4>
-            <p>Boaters want a recommendation rather than comb through weather data.</p>
+            </ul>
           </div>
-          <div class="content">
-          <h4>Brainstorm</h4>
-            <p>Design a visual that gives a simple recommendation of how safe the ocean is. This
-            way boaters can know ocean conditions at a glance.</p>
+
+        </div>
+      </div>
+      <!--User end-->
+
+      <!--Brainstorm start-->
+      <div class="clearfix topp150">
+        <h2>Brainstorm</h2>
+        <div>
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/lifeboat/weather_lowfi.png" media="(max-width:767px)">
+              <img src="img/work/lifeboat/weather_lowfi.png" alt="Weather Lowfi">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="content">
+              <h4>Issue</h4>
+              <p>Boaters are frustrated with having to check multiple weather sources to get all the
+                information they need.</p>
+            </div>
+            <div class="content">
+              <h4>Brainstorm</h4>
+              <p>Ensure all pertinent information to boaters is included: temperature, precipitation, wind, swell
+                height, visibility, tide times, and sun times.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix topp200">
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/lifeboat/home_lowfi.png" media="(max-width:767px)">
+              <img src="img/work/lifeboat/home_lowfi.png" alt="Home Lowfi">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="content">
+              <h4>Issue</h4>
+              <p>Boaters want a recommendation rather than comb through weather data.</p>
+            </div>
+            <div class="content">
+              <h4>Brainstorm</h4>
+              <p>Design a visual that gives a simple recommendation of how safe the ocean is. This
+                way boaters can know ocean conditions at a glance.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="clearfix topp200">
+          <div class="lowfi float">
+            <picture style="padding-right: 200px;">
+              <source srcset="img/work/lifeboat/trips_lowfi.png" media="(max-width:767px)">
+              <img src="img/work/lifeboat/trips_lowfi.png" alt="Trips Lowfi">
+            </picture>
+          </div>
+          <div class="brainstorm">
+            <div class="content">
+              <h4>Issue</h4>
+              <p>Avid boaters have favorite spots they go to. They need an easy way to check the
+                weather at their destinations.</p>
+            </div>
+            <div class="content">
+              <h4>Brainstorm</h4>
+              <p>Create a way for boaters to check the weather at 2 spots: their starting point and
+                destination.</p>
+            </div>
           </div>
         </div>
       </div>
-
-
-      <div class="clearfix topp200"> 
-        <div class="lowfi float">
-          <picture style="padding-right: 200px;">
-            <source srcset="img/work/lifeboat/trips_lowfi.png" media="(max-width:767px)">
-            <img src="img/work/lifeboat/trips_lowfi.png" alt="Trips Lowfi">
-          </picture>
-        </div>
-        <div class="brainstorm">
-          <div class="content">
-            <h4>Issue</h4>
-            <p>Avid boaters have favorite spots they go to. They need an easy way to check the
-            weather at their destinations.</p>
+      <!--Brainstorm end-->
+      <!--Sitemap start-->
+      <div class="topp200">
+        <h3>The Site Map</h3>
+        <div class="row">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12">
+            <p>Lifeboat is organized into 4 sections that users can switch between. Users interact
+              with the app daily in short sessions and it is important that they can easily find
+              information.</p>
+            <p>The site map was revised after performing a card sorting exercise to understand
+              how people categorized content. A key take away from card sorting was that users
+              don’t categorize tide and sunset times with other weather data.</p>
           </div>
-          <div class="content">
-            <h4>Brainstorm</h4>
-            <p>Create a way for boaters to check the weather at 2 spots: their starting point and
-            destination.</p>
-          </div>
-      </div>
-    </div> 
-  </div>  
-<!--Brainstorm end-->
-<!--Sitemap start-->
-  <div class="topp200">
-    <h3>The Site Map</h3>
-      <div class="row">
-        <div class="col-md-5">
-          <p>Lifeboat is organized into 4 sections that users can switch between. Users interact
-          with the app daily in short sessions and it is important that they can easily find
-          information.</p>
-          <p>The site map was revised after performing a card sorting exercise to understand
-          how people categorized content. A key take away from card sorting was that users
-          don’t categorize tide and sunset times with other weather data.</p>
-        </div>   
-        <div class="col-md-7 leftp50">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 leftp50">
             <picture>
               <source srcset="img/work/lifeboat/sitemap.png" media="(max-width:767px)">
               <img src="img/work/lifeboat/sitemap.png" alt="Site Map">
             </picture>
-        </div>   
-      </div>
-  </div>    
-<!--Sitemap end-->
-<!--Usability study start-->
-  <div class="topp200">
-    <h3>Usability Study</h3>
-    <div class="row">
-      <div class="col-md-7 rightp50">
-      <picture>
-        <source srcset="img/work/lifeboat/issues.png" media="(max-width:767px)">
-        <img src="img/work/lifeboat/issues.png" alt="Usability Issues">
-        </picture> 
-      </div>
-      <div class="col-md-5 leftp50">
-        <p style="margin-top: 0px;">6 users participated in a study to identify pain points in the prototype. These issues
-        were found and revisions were made in the following iteration.</p>
-      </div>  
-    </div> 
-  </div>  
- <!--Usability study end-->         
- <!--Design start-->
-  <div class="topp200">
-    <h3>The Design</h3>
-      <div>
-        <div>  
-          <p>Chakra Petch was chosen as the primary font because it is nautical and scientific. I
-          was inspired to use orange by the color of lifeboats.</p>
-        </div> 
-        <div class="topp50">
-          <picture style="margin-left: 100px;>
-            <source srcset="img/work/lifeboat/fonts.png" media="(max-width:767px)">
-            <img src="img/work/lifeboat/fonts.png" alt="Fonts" style="width:80%;">
-          </picture>
+          </div>
         </div>
-      </div> 
-
+      </div>
+      <!--Sitemap end-->
+      <!--Usability study start-->
       <div class="topp200">
-        <div>  
-          <p>The orange filled icons accent blue and white that are used on the background and
-          text.</p>
+        <h3>Usability Study</h3>
+        <div class="row">
+          <div class="col-md-7 rightp50">
+            <picture>
+              <source srcset="img/work/lifeboat/issues.png" media="(max-width:767px)">
+              <img src="img/work/lifeboat/issues.png" alt="Usability Issues">
+            </picture>
+          </div>
+          <div class="col-md-5 leftp50">
+            <p style="margin-top: 0px;">6 users participated in a study to identify pain points in the prototype. These
+              issues
+              were found and revisions were made in the following iteration.</p>
+          </div>
         </div>
-        <div class="topp50">
-          <picture style="margin-left: 120px;>
-            <source srcset="img/work/lifeboat/icons.png" media="(max-width:767px)">
-            <img src="img/work/lifeboat/icons.png" alt="Icons" style="width: 400px;">
+      </div>
+      <!--Usability study end-->
+      <!--Design start-->
+      <div class="topp200">
+        <h3>The Design</h3>
+        <div>
+          <div>
+            <p>Chakra Petch was chosen as the primary font because it is nautical and scientific. I
+              was inspired to use orange by the color of lifeboats.</p>
+          </div>
+          <div class="topp50">
+            <picture>
+            <source srcset="img/work/lifeboat/fonts.png" media="(max-width:767px)">
+              <img src="img/work/lifeboat/fonts.png" alt="Fonts" style="width:80%;">
+            </picture>
+          </div>
+        </div>
+
+        <div class="topp200">
+          <div>
+            <p>The orange filled icons accent blue and white that are used on the background and
+              text.</p>
+          </div>
+          <div class="topp50">
+            <picture>
+              <source srcset="img/work/lifeboat/icons.png" media="(max-width:767px)">
+              <img src="img/work/lifeboat/icons.png" alt="Home" style="width: 350px;">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!--Design end-->
+
+      <!--Final product start-->
+      <div class="topp200">
+        <h2>The Final Product</h2>
+        <div>
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12 leftp200">
+            <source srcset="img/work/lifeboat/home_front_mockup.png" media="(max-width:767px)">
+            <img src="img/work/lifeboat/home_front_mockup.png" alt="Home" style="width: 350px;">
+          </picture>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp100 rightp100">
+            <h3>Home Page</h3>
+            <p>The main feature of the home page is the safety meter. A key takeaway from my
+              initial user interviews, was that boaters want a summary of weather conditions so
+              they don't have to comb through data. Ocean specific metrics are also available at a
+              glance on the home page.</p>
+          </div>
+        </div>
+
+        <div class="clearfix topp200">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp100 leftp50">
+            <h3>Weather</h3>
+            <p>Boaters check the weather everyday leading up to a boating excursion. The weather
+              section gives users an hourly view of each weather metric. In the usability study, I
+              tested a different hourly visual that looked like a clock. Feedback was mixed and I
+              replaced it with a graph that is more digestible.</p>
+          </div>
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12 rightp100">
+            <source srcset="img/work/lifeboat/weather_duo.png" media="(max-width:767px)">
+            <img src="img/work/lifeboat/weather_duo.png" alt="Weather" style="width: 700px;">
+          </picture>
+        </div>
+
+        <div class="clearfix topp200">
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12 leftp200">
+            <source srcset="img/work/lifeboat/trips_mockup.png" media="(max-width:767px)">
+            <img src="img/work/lifeboat/trips_mockup.png" alt="Trips" style="width: 350px;">
+          </picture>
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp100 rightp100">
+            <h3>Trips</h3>
+            <p>Boaters check the weather in 2 places - their starting point and destination. The
+              trips section allows users to see the weather at both places at once. Users can save
+              favorite destinations.</p>
+          </div>
+        </div>
+
+        <div class="clearfix topp200">
+          <div class="column col-md-5 col-md-6 col-lg-7 col-sm-12 topp100 leftp100">
+            <h3>Settings</h3>
+            <p>Boaters can save details about their boat and marina under settings. The starting
+              location will default to the My Marina location. The safety meter's algorithm will take
+              into consideration the type of boat when determining ocean safety.</p>
+          </div>
+          <picture class="column col-md-5 col-md-6 col-lg-7 col-sm-12 rightp100">
+            <source srcset="img/work/lifeboat/myprofile_front_mockup.png" media="(max-width:767px)">
+            <img src="img/work/lifeboat/myprofile_front_mockup.png" alt="Settings" style="width: 350px;">
           </picture>
         </div>
       </div>
-  </div>  
- <!--Design end-->     
+      <!--Final product end-->
 
- <!--Final product start--> 
-  <div class="topp200">
-    <h2>The Final Product</h2>
-      <div>
-        <picture class="col-md-6 leftp200">
-          <source srcset="img/work/lifeboat/home_front_mockup.png" media="(max-width:767px)">
-          <img src="img/work/lifeboat/home_front_mockup.png" alt="Home" style="width: 350px;">
-        </picture>
-        <div class="col-md-6 topp100 rightp100">
-          <h3>Home Page</h3>
-          <p>The main feature of the home page is the safety meter. A key takeaway from my
-          initial user interviews, was that boaters want a summary of weather conditions so
-          they don't have to comb through data. Ocean specific metrics are also available at a
-          glance on the home page.</p>
-        </div>
-      </div>   
-
-      <div class="clearfix topp200">
-        <div class="col-md-5 topp100 leftp50">
-          <h3>Weather</h3>  
-          <p>Boaters check the weather everyday leading up to a boating excursion. The weather
-          section gives users an hourly view of each weather metric. In the usability study, I
-          tested a different hourly visual that looked like a clock. Feedback was mixed and I
-          replaced it with a graph that is more digestible.</p>
-        </div> 
-        <picture class="col-md-7 rightp100">
-          <source srcset="img/work/lifeboat/weather_duo.png" media="(max-width:767px)">
-          <img src="img/work/lifeboat/weather_duo.png" alt="Weather" style="width: 700px;">
-        </picture>
-      </div>
-
-      <div class="clearfix topp200">
-        <picture class="col-md-6 leftp200">
-          <source srcset="img/work/lifeboat/trips_mockup.png" media="(max-width:767px)">
-          <img src="img/work/lifeboat/trips_mockup.png" alt="Trips" style="width: 350px;">
-        </picture>
-        <div class="col-md-6 topp100 rightp100">
-          <h3>Trips</h3>
-          <p>Boaters check the weather in 2 places - their starting point and destination. The
-          trips section allows users to see the weather at both places at once. Users can save
-          favorite destinations.</p>
-        </div>
-      </div>
-
-      <div class="clearfix topp200">
-        <div class="col-md-6 topp100 leftp100">
-          <h3>Settings</h3>
-          <p>Boaters can save details about their boat and marina under settings. The starting
-            location will default to the My Marina location. The safety meter's algorithm will take
-            into consideration the type of boat when determining ocean safety.</p>
-        </div>
-        <picture class="col-md-6 rightp100">
-          <source srcset="img/work/lifeboat/myprofile_front_mockup.png" media="(max-width:767px)">
-          <img src="img/work/lifeboat/myprofile_front_mockup.png" alt="Settings" style="width: 350px;">
-        </picture>
-      </div>
-  </div>
-<!--Final product end--> 
-
-  </div> 
-</main>
+    </div>
+  </main>
 
   <footer class="footer clearfix">
     <div class="container">
       <div class="logo" style="margin-top: 20px;">
         <a href="https://www.linkedin.com/in/jenni-hewes/" target="_blank">
-          <svg height="40px" width="40px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g>
+          <svg height="40px" width="40px"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1"
+            viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="g5891">
+              <path
+                d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
+                id="background" style="fill:#2867b2;" />
+              <g id="shapes">
+                <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
+                <path
+                  d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
+                  id="path13-0" style="fill:#fff;fill-rule:nonzero;" />
+                <path
+                  d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                  id="path15" style="fill:#fff;fill-rule:nonzero;" />
+              </g>
+            </g>
           </svg>
         </a>
       </div>
@@ -365,5 +390,10 @@
     </div>
   </footer>
 
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
 </html>
