@@ -58,7 +58,7 @@ img {
 
 /*HOMEPAGE*/
 .logo {
-  max-width: 250px;
+  max-width: 225px;
 }
 
 header {
@@ -87,13 +87,13 @@ nav>ul>li {
 
 nav>ul>li>a {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
   margin-top: 8px;
   color: #0B1F53;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 900;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 .navtoggle li:not(:last-child) {
@@ -117,7 +117,6 @@ nav>ul>li>a:hover {
   top: 2px;
   font-size: 40px;
   padding-right: 20px;
-  padding-top: 10px;
 }
 
 .navtoggle.responsive nav {
@@ -179,9 +178,9 @@ footer {
   font: 'Montserrat';
   border: solid;
   border-color: #FFF7E2;
-  border-width: 5px;
-  padding: 10px 30px 10px 30px;
-  margin-top: 50px;
+  border-width: 8px;
+  padding: 10px 20px;
+  margin-top: 30px;
 }
 
 .layerpic {
@@ -207,10 +206,10 @@ footer {
   font: 'Montserrat';
   background-color: #FFF7E2;
   padding: 40px;
-  width: 360px;
-  height: 400px;
-  margin-bottom: 50px;
-
+  width: auto;;
+  height: 425px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 
@@ -296,21 +295,29 @@ iPhone screen: C2E0C7
 .rotten h1 {
   font-family: 'Montserrat', serif;
   color: #494949;
-  background-color: #FFFFFF;
-  height: 300px;
-  width: auto;
+  padding-bottom: 100px;
+
 }
 
 .rotten h2 {
   font-family: 'Montserrat', serif;
-  margin: 50px 0;
-  background-image: url(../img/work/rotten/h2.png);
+  font-size: 2.0em;
   color: #494949;
   background-color: #FFFFFF;
-  height: 200px;
+  border: solid;
+  border-color: #494949;
+  display: inline-block;
+  padding: 10px;
+
+ }
+
+.iconbg {
+  background-image: url(../img/work/rotten/h2.png);
+  height: auto;
   width: auto;
-  padding-top: 75px;
-  padding-left: 20px;
+  margin-bottom: 75px;
+  text-align:center;t
+
 }
 
 .rotten h3 {
@@ -436,19 +443,6 @@ iPhone screen: C2E0C7
 
 
 /*POSITIONS*/
-
-.col-md-6 {
-  width: 50%;
-}
-
-.col-md-7 {
-  width: 60%;
-}
-
-.col-md-5 {
-  width: 40%;
-}
-
 .col-sm-12 {
   width: 100%;
 }
@@ -472,6 +466,22 @@ iPhone screen: C2E0C7
 
 /*Medium devices*/
 @media only screen and (min-width: 640px) {
+  .col-md-6 {
+    width: 50%;
+  }
+  
+  .col-md-7 {
+    width: 60%;
+  }
+  
+  .col-md-5 {
+    width: 40%;
+  }
+  
+  .col-md-4 {
+    width: 30%;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
